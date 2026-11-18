@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import StudioRack from './components/StudioRack';
+import MusicWaves from './components/MusicWaves';
 import Features from './components/Features';
 import Comparison from './components/Comparison';
 import CliShowcase from './components/CliShowcase';
@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <StudioRack />
+        <MusicWaves />
         <Features />
         <Comparison />
         <CliShowcase />

@@ -349,6 +349,12 @@ class StudioAudioEngine {
       isPlaying: this.isPlaying,
     };
   }
+
+  // Get raw frequency data for 3D visualizer
+  getFrequencyData(array) {
+    if (!this.analyserL) return;
+    this.analyserL.getByteFrequencyData(array);
+  }
 }
 
 export const studioAudio = new StudioAudioEngine();

@@ -15,11 +15,14 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <nav className="hidden sm:flex items-center gap-7 text-xs font-medium text-slate-400">
-          <a href="#vumeter" className="hover:text-slate-100 transition-colors">
-            VU-mètre en direct
+          <a href="#waves" className="hover:text-slate-100 transition-colors">
+            Ondes sonores 3D
           </a>
           <a href="#features" className="hover:text-slate-100 transition-colors">
             Atouts
+          </a>
+          <a href="#specs" className="hover:text-slate-100 transition-colors">
+            Spécifications
           </a>
           <a href="#cli" className="hover:text-slate-100 transition-colors">
             Ligne de commande
