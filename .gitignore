@@ -1,0 +1,19 @@
+/target
+/out
+/tmp
+/*.log
+node_modules
+web/node_modules
+web/dist
+scratch/
+graphify-out/
+
+# Media artifacts
+*.mp4
+*.wav
+
+# Keep icon and brand PNGs
+*.png
+!assets/**
+!public/**
+!web/public/**

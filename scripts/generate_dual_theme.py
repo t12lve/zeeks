@@ -1,0 +1,381 @@
+import os
+
+svg_b1_symbol = open('assets/logo/concept_b_amber_blue.svg', 'r', encoding='utf-8').read()
+svg_b1_lock = open('assets/logo/concept_b_amber_blue_lockup.svg', 'r', encoding='utf-8').read()
+svg_b2_symbol = open('assets/logo/concept_b_blue_amber.svg', 'r', encoding='utf-8').read()
+svg_b2_lock = open('assets/logo/concept_b_blue_amber_lockup.svg', 'r', encoding='utf-8').read()
+
+# Build comprehensive dual theme SVG
+content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1350" width="1600" height="1350">
+  <defs>
+    <style>
+      .title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; fill: #0F172A; }
+      .sub { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; fill: #64748B; }
+      .card-title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+      .desc { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.5; fill: #475569; }
+      .badge { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; font-size: 12px; }
+      .code { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Global Canvas Background -->
+  <rect width="1600" height="1350" fill="#F1F5F9"/>
+
+  <!-- Header -->
+  <g transform="translate(60, 50)">
+    <text class="title" font-size="32" y="0">ZEEKS — Déclinaisons Chromatiques (Concept B)</text>
+    <text class="sub" font-size="16" y="28">Harmonie Complémentaire : Bleu Roi (#2563EB) &amp; Orange Ambré (#EA580C) · Validation Multi-Thèmes (Clair &amp; Sombre)</text>
+  </g>
+
+  <!-- COLUMN 1: VARIATION B1 (RECOMMENDED) -->
+  <g transform="translate(60, 110)">
+    <!-- Header Box B1 -->
+    <rect width="710" height="1180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    
+    <!-- Title & Badge -->
+    <g transform="translate(32, 36)">
+      <rect x="0" y="-18" width="126" height="24" rx="12" fill="#2563EB"/>
+      <text class="badge" x="12" y="-2" fill="#FFFFFF">RECOMMANDÉ</text>
+      <text class="title" font-size="20" y="32">Variation B1 : Onde Ambre → Écran Bleu Roi</text>
+      <text class="sub" font-size="13" y="52">Sémantique : Énergie sonore brute (#EA580C) canalisée vers la structure vidéo (#2563EB)</text>
+    </g>
+
+    <!-- Theme Light Card -->
+    <g transform="translate(32, 120)">
+      <rect width="646" height="390" rx="12" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+      <text class="card-title" x="24" y="32" fill="#64748B">Fond Clair (Interface Standard / Web)</text>
+      
+      <!-- Symbol Large -->
+      <g transform="translate(50, 60)">
+        <svg x="0" y="0" width="200" height="200" viewBox="0 0 256 256">
+          <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+          <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+          <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+          <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+        </svg>
+      </g>
+
+      <!-- Scale checks 64, 32, 16 px -->
+      <g transform="translate(300, 70)">
+        <text class="desc" x="0" y="0" font-weight="600" fill="#334155">Échelles Système :</text>
+        <!-- 64px -->
+        <g transform="translate(0, 15)">
+          <rect width="64" height="64" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="64" height="64" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="38" fill="#64748B">64px (Bureau)</text>
+        </g>
+        <!-- 32px -->
+        <g transform="translate(0, 90)">
+          <rect width="32" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="32" height="32" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="22" fill="#64748B">32px (Barre des tâches)</text>
+        </g>
+        <!-- 16px -->
+        <g transform="translate(0, 135)">
+          <rect width="16" height="16" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="16" height="16" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="13" fill="#64748B">16px (Favicon / Tray)</text>
+        </g>
+      </g>
+
+      <!-- Lockup Horizontal -->
+      <g transform="translate(24, 280)">
+        <rect width="598" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+        <svg x="15" y="5" width="568" height="75" viewBox="0 0 678 256">
+          <g>
+            <rect x="50" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="78" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="106" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 150 80 L 254 80 A 16 16 0 0 1 270 96 L 270 160 A 16 16 0 0 1 254 176 L 150 176 A 16 16 0 0 1 134 160 L 134 96 A 16 16 0 0 1 150 80 Z M 154 98 L 250 98 A 6 6 0 0 1 256 104 L 256 152 A 6 6 0 0 1 250 158 L 154 158 A 6 6 0 0 1 148 152 L 148 104 A 6 6 0 0 1 154 98 Z" fill="#2563EB"/>
+          </g>
+          <g fill="#2563EB">
+            <path d="M 330 92 L 384 92 L 384 108 L 352 148 L 384 148 L 384 164 L 330 164 L 330 148 L 362 108 L 330 108 Z"/>
+            <path d="M 400 92 L 446 92 L 446 107 L 416 107 L 416 120 L 442 120 L 442 134 L 416 134 L 416 149 L 446 149 L 446 164 L 400 164 Z"/>
+            <path d="M 462 92 L 508 92 L 508 107 L 478 107 L 478 120 L 504 120 L 504 134 L 478 134 L 478 149 L 508 149 L 508 164 L 462 164 Z"/>
+            <path d="M 524 92 L 540 92 L 540 120 L 559 92 L 578 92 L 551 128 L 579 164 L 559 164 L 540 138 L 540 164 L 524 164 Z"/>
+            <path d="M 638 108 L 623 108 C 623 106, 619 104, 614 104 C 608 104, 605 107, 605 111 C 605 116, 609 119, 617 122 L 623 124 C 634 128, 640 135, 640 144 C 640 156, 630 164, 616 164 C 601 164, 592 155, 592 144 L 607 144 C 607 149, 611 152, 616 152 C 622 152, 625 149, 625 145 C 625 140, 621 137, 613 134 L 607 132 C 597 128, 591 121, 591 112 C 591 100, 601 92, 615 92 C 629 92, 638 100, 638 108 Z"/>
+          </g>
+        </svg>
+      </g>
+    </g>
+
+    <!-- Theme Dark Card -->
+    <g transform="translate(32, 530)">
+      <rect width="646" height="390" rx="12" fill="#0B0F19" stroke="#1E293B" stroke-width="1"/>
+      <text class="card-title" x="24" y="32" fill="#94A3B8">Fond Sombre (Interface Windows 11 Dark / Obsidian)</text>
+      
+      <!-- Symbol Large Dark -->
+      <g transform="translate(50, 60)">
+        <svg x="0" y="0" width="200" height="200" viewBox="0 0 256 256">
+          <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+          <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+          <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+          <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+        </svg>
+      </g>
+
+      <!-- Scale checks on dark -->
+      <g transform="translate(300, 70)">
+        <text class="desc" x="0" y="0" font-weight="600" fill="#E2E8F0">Échelles Système :</text>
+        <g transform="translate(0, 15)">
+          <rect width="64" height="64" rx="8" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="64" height="64" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="38" fill="#94A3B8">64px (Dark)</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="32" height="32" rx="6" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="32" height="32" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="22" fill="#94A3B8">32px (Dark Taskbar)</text>
+        </g>
+        <g transform="translate(0, 135)">
+          <rect width="16" height="16" rx="4" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="16" height="16" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#2563EB"/>
+          </svg>
+          <text class="code" x="74" y="13" fill="#94A3B8">16px (Dark Tray)</text>
+        </g>
+      </g>
+
+      <!-- Lockup Horizontal on dark -->
+      <g transform="translate(24, 280)">
+        <rect width="598" height="85" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+        <svg x="15" y="5" width="568" height="75" viewBox="0 0 678 256">
+          <g>
+            <rect x="50" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+            <rect x="78" y="84" width="16" height="88" rx="8" fill="#EA580C"/>
+            <rect x="106" y="98" width="16" height="60" rx="8" fill="#EA580C"/>
+            <path fill-rule="evenodd" d="M 150 80 L 254 80 A 16 16 0 0 1 270 96 L 270 160 A 16 16 0 0 1 254 176 L 150 176 A 16 16 0 0 1 134 160 L 134 96 A 16 16 0 0 1 150 80 Z M 154 98 L 250 98 A 6 6 0 0 1 256 104 L 256 152 A 6 6 0 0 1 250 158 L 154 158 A 6 6 0 0 1 148 152 L 148 104 A 6 6 0 0 1 154 98 Z" fill="#2563EB"/>
+          </g>
+          <g fill="#2563EB">
+            <path d="M 330 92 L 384 92 L 384 108 L 352 148 L 384 148 L 384 164 L 330 164 L 330 148 L 362 108 L 330 108 Z"/>
+            <path d="M 400 92 L 446 92 L 446 107 L 416 107 L 416 120 L 442 120 L 442 134 L 416 134 L 416 149 L 446 149 L 446 164 L 400 164 Z"/>
+            <path d="M 462 92 L 508 92 L 508 107 L 478 107 L 478 120 L 504 120 L 504 134 L 478 134 L 478 149 L 508 149 L 508 164 L 462 164 Z"/>
+            <path d="M 524 92 L 540 92 L 540 120 L 559 92 L 578 92 L 551 128 L 579 164 L 559 164 L 540 138 L 540 164 L 524 164 Z"/>
+            <path d="M 638 108 L 623 108 C 623 106, 619 104, 614 104 C 608 104, 605 107, 605 111 C 605 116, 609 119, 617 122 L 623 124 C 634 128, 640 135, 640 144 C 640 156, 630 164, 616 164 C 601 164, 592 155, 592 144 L 607 144 C 607 149, 611 152, 616 152 C 622 152, 625 149, 625 145 C 625 140, 621 137, 613 134 L 607 132 C 597 128, 591 121, 591 112 C 591 100, 601 92, 615 92 C 629 92, 638 100, 638 108 Z"/>
+          </g>
+        </svg>
+      </g>
+    </g>
+
+    <!-- Metrics & Analysis Footer B1 -->
+    <g transform="translate(32, 940)">
+      <rect width="646" height="200" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text class="card-title" x="20" y="30" fill="#1E293B">Analyse Design &amp; Contrastes WCAG :</text>
+      
+      <circle cx="28" cy=\"60\" r="6" fill="#EA580C"/>
+      <text class="desc" x="42" y="64"><tspan font-weight="700">Orange Ambré #EA580C :</tspan> Contraste 3.56:1 (sur blanc) · 5.38:1 (sur sombre) → Conforme WCAG AA</text>
+
+      <circle cx="28" cy="90" r="6" fill="#2563EB"/>
+      <text class="desc" x="42" y="94"><tspan font-weight="700">Bleu Roi #2563EB :</tspan> Contraste 5.17:1 (sur blanc) · 3.71:1 (sur sombre) → Conforme WCAG AA</text>
+
+      <text class="desc" x="20" y="132" fill="#334155"><tspan font-weight="700">Pourquoi B1 est recommandée :</tspan> L'orange évoque la vibration acoustique vivante et</text>
+      <text class="desc" x="20" y="152" fill="#334155">instable, tandis que le bleu roi ancre l'écran dans une structure technologique stable et</text>
+      <text class="desc" x="20" y="172" fill="#334155">rassurante. Le mot-symbole ZEEKS en bleu roi assure une lisibilité textuelle maximale.</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: VARIATION B2 -->
+  <g transform="translate(830, 110)">
+    <!-- Header Box B2 -->
+    <rect width="710" height="1180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    
+    <!-- Title & Badge -->
+    <g transform="translate(32, 36)">
+      <rect x="0" y="-18" width="90" height="24" rx="12" fill="#64748B"/>
+      <text class="badge" x="12" y="-2" fill="#FFFFFF">VARIANTE</text>
+      <text class="title" font-size="20" y="32">Variation B2 : Onde Bleu Roi → Écran Ambre</text>
+      <text class="sub" font-size="13" y="52">Sémantique : Onde de fréquence technique (#2563EB) se condensant en cadre d'impact (#EA580C)</text>
+    </g>
+
+    <!-- Theme Light Card B2 -->
+    <g transform="translate(32, 120)">
+      <rect width="646" height="390" rx="12" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+      <text class="card-title" x="24" y="32" fill="#64748B">Fond Clair (Interface Standard / Web)</text>
+      
+      <!-- Symbol Large B2 -->
+      <g transform="translate(50, 60)">
+        <svg x="0" y="0" width="200" height="200" viewBox="0 0 256 256">
+          <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+          <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+          <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+          <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+        </svg>
+      </g>
+
+      <!-- Scale checks B2 -->
+      <g transform="translate(300, 70)">
+        <text class="desc" x="0" y="0" font-weight="600" fill="#334155">Échelles Système :</text>
+        <g transform="translate(0, 15)">
+          <rect width="64" height="64" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="64" height="64" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="38" fill="#64748B">64px (Bureau)</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="32" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="32" height="32" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="22" fill="#64748B">32px (Barre des tâches)</text>
+        </g>
+        <g transform="translate(0, 135)">
+          <rect width="16" height="16" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <svg x="0" y="0" width="16" height="16" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="13" fill="#64748B">16px (Favicon / Tray)</text>
+        </g>
+      </g>
+
+      <!-- Lockup Horizontal B2 -->
+      <g transform="translate(24, 280)">
+        <rect width="598" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+        <svg x="15" y="5" width="568" height="75" viewBox="0 0 678 256">
+          <g>
+            <rect x="50" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="78" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="106" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 150 80 L 254 80 A 16 16 0 0 1 270 96 L 270 160 A 16 16 0 0 1 254 176 L 150 176 A 16 16 0 0 1 134 160 L 134 96 A 16 16 0 0 1 150 80 Z M 154 98 L 250 98 A 6 6 0 0 1 256 104 L 256 152 A 6 6 0 0 1 250 158 L 154 158 A 6 6 0 0 1 148 152 L 148 104 A 6 6 0 0 1 154 98 Z" fill="#EA580C"/>
+          </g>
+          <g fill="#2563EB">
+            <path d="M 330 92 L 384 92 L 384 108 L 352 148 L 384 148 L 384 164 L 330 164 L 330 148 L 362 108 L 330 108 Z"/>
+            <path d="M 400 92 L 446 92 L 446 107 L 416 107 L 416 120 L 442 120 L 442 134 L 416 134 L 416 149 L 446 149 L 446 164 L 400 164 Z"/>
+            <path d="M 462 92 L 508 92 L 508 107 L 478 107 L 478 120 L 504 120 L 504 134 L 478 134 L 478 149 L 508 149 L 508 164 L 462 164 Z"/>
+            <path d="M 524 92 L 540 92 L 540 120 L 559 92 L 578 92 L 551 128 L 579 164 L 559 164 L 540 138 L 540 164 L 524 164 Z"/>
+            <path d="M 638 108 L 623 108 C 623 106, 619 104, 614 104 C 608 104, 605 107, 605 111 C 605 116, 609 119, 617 122 L 623 124 C 634 128, 640 135, 640 144 C 640 156, 630 164, 616 164 C 601 164, 592 155, 592 144 L 607 144 C 607 149, 611 152, 616 152 C 622 152, 625 149, 625 145 C 625 140, 621 137, 613 134 L 607 132 C 597 128, 591 121, 591 112 C 591 100, 601 92, 615 92 C 629 92, 638 100, 638 108 Z"/>
+          </g>
+        </svg>
+      </g>
+    </g>
+
+    <!-- Theme Dark Card B2 -->
+    <g transform="translate(32, 530)">
+      <rect width="646" height="390" rx="12" fill="#0B0F19" stroke="#1E293B" stroke-width="1"/>
+      <text class="card-title" x="24" y="32" fill="#94A3B8">Fond Sombre (Interface Windows 11 Dark / Obsidian)</text>
+      
+      <!-- Symbol Large B2 Dark -->
+      <g transform="translate(50, 60)">
+        <svg x="0" y="0" width="200" height="200" viewBox="0 0 256 256">
+          <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+          <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+          <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+          <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+        </svg>
+      </g>
+
+      <!-- Scale checks B2 Dark -->
+      <g transform="translate(300, 70)">
+        <text class="desc" x="0" y="0" font-weight="600" fill="#E2E8F0">Échelles Système :</text>
+        <g transform="translate(0, 15)">
+          <rect width="64" height="64" rx="8" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="64" height="64" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="38" fill="#94A3B8">64px (Dark)</text>
+        </g>
+        <g transform="translate(0, 90)">
+          <rect width="32" height="32" rx="6" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="32" height="32" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="22" fill="#94A3B8">32px (Dark Taskbar)</text>
+        </g>
+        <g transform="translate(0, 135)">
+          <rect width="16" height="16" rx="4" fill="#111827" stroke="#334155" stroke-width="1"/>
+          <svg x="0" y="0" width="16" height="16" viewBox="0 0 256 256">
+            <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="52" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="80" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 124 80 L 228 80 A 16 16 0 0 1 244 96 L 244 160 A 16 16 0 0 1 228 176 L 124 176 A 16 16 0 0 1 108 160 L 108 96 A 16 16 0 0 1 124 80 Z M 128 98 L 224 98 A 6 6 0 0 1 230 104 L 230 152 A 6 6 0 0 1 224 158 L 128 158 A 6 6 0 0 1 122 152 L 122 104 A 6 6 0 0 1 128 98 Z" fill="#EA580C"/>
+          </svg>
+          <text class="code" x="74" y="13" fill="#94A3B8">16px (Dark Tray)</text>
+        </g>
+      </g>
+
+      <!-- Lockup Horizontal B2 Dark -->
+      <g transform="translate(24, 280)">
+        <rect width="598" height="85" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+        <svg x="15" y="5" width="568" height="75" viewBox="0 0 678 256">
+          <g>
+            <rect x="50" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+            <rect x="78" y="84" width="16" height="88" rx="8" fill="#2563EB"/>
+            <rect x="106" y="98" width="16" height="60" rx="8" fill="#2563EB"/>
+            <path fill-rule="evenodd" d="M 150 80 L 254 80 A 16 16 0 0 1 270 96 L 270 160 A 16 16 0 0 1 254 176 L 150 176 A 16 16 0 0 1 134 160 L 134 96 A 16 16 0 0 1 150 80 Z M 154 98 L 250 98 A 6 6 0 0 1 256 104 L 256 152 A 6 6 0 0 1 250 158 L 154 158 A 6 6 0 0 1 148 152 L 148 104 A 6 6 0 0 1 154 98 Z" fill="#EA580C"/>
+          </g>
+          <g fill="#2563EB">
+            <path d="M 330 92 L 384 92 L 384 108 L 352 148 L 384 148 L 384 164 L 330 164 L 330 148 L 362 108 L 330 108 Z"/>
+            <path d="M 400 92 L 446 92 L 446 107 L 416 107 L 416 120 L 442 120 L 442 134 L 416 134 L 416 149 L 446 149 L 446 164 L 400 164 Z"/>
+            <path d="M 462 92 L 508 92 L 508 107 L 478 107 L 478 120 L 504 120 L 504 134 L 478 134 L 478 149 L 508 149 L 508 164 L 462 164 Z"/>
+            <path d="M 524 92 L 540 92 L 540 120 L 559 92 L 578 92 L 551 128 L 579 164 L 559 164 L 540 138 L 540 164 L 524 164 Z"/>
+            <path d="M 638 108 L 623 108 C 623 106, 619 104, 614 104 C 608 104, 605 107, 605 111 C 605 116, 609 119, 617 122 L 623 124 C 634 128, 640 135, 640 144 C 640 156, 630 164, 616 164 C 601 164, 592 155, 592 144 L 607 144 C 607 149, 611 152, 616 152 C 622 152, 625 149, 625 145 C 625 140, 621 137, 613 134 L 607 132 C 597 128, 591 121, 591 112 C 591 100, 601 92, 615 92 C 629 92, 638 100, 638 108 Z"/>
+          </g>
+        </svg>
+      </g>
+    </g>
+
+    <!-- Metrics & Analysis Footer B2 -->
+    <g transform="translate(32, 940)">
+      <rect width="646" height="200" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text class="card-title" x="20" y="30" fill="#1E293B">Analyse Design &amp; Contrastes WCAG :</text>
+      
+      <circle cx="28" cy="60" r="6" fill="#2563EB"/>
+      <text class="desc" x="42" y="64"><tspan font-weight="700">Bleu Roi #2563EB :</tspan> Onde sonore technique et posée</text>
+
+      <circle cx="28" cy="90" r="6" fill="#EA580C"/>
+      <text class="desc" x="42" y="94"><tspan font-weight="700">Orange Ambré #EA580C :</tspan> Cadre écran très visible et percutant</text>
+
+      <text class="desc" x="20" y="132" fill="#334155"><tspan font-weight="700">Caractère de la variante B2 :</tspan> L'attention visuelle est immédiatement attirée par</text>
+      <text class="desc" x="20" y="152" fill="#334155">l'écran orange vif. Excellente option si l'on souhaite mettre l'accent avant tout sur la vidéo</text>
+      <text class="desc" x="20" y="172" fill="#334155">finale résultante comme aboutissement lumineux.</text>
+    </g>
+  </g>
+</svg>"""
+
+with open('assets/logo/concept_b_color_presentation.svg', 'w', encoding='utf-8') as f:
+    f.write(content)
+
+print('Wrote assets/logo/concept_b_color_presentation.svg')

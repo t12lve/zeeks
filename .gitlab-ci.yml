@@ -1,0 +1,37 @@
+# GitLab CI/CD Configuration for ZEEKS Pages
+# Automatically builds the React showcase with Vite and publishes the static public/ artifact
+
+image: node:22-alpine
+
+stages:
+  - build
+  - deploy
+
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - web/package-lock.json
+    paths:
+      - web/node_modules/
+  before_script:
+    - node -v
+    - npm -v
+  script:
+    - |
+      if [ -d "web" ]; then
+        cd web
+        npm ci || npm install
+        npm run build
+        cd ..
+        rm -rf public
+        cp -r web/dist public
+      fi
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_BRANCH == "master"

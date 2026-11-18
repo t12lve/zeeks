@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="984" viewBox="0 0 1600 984"><defs><filter id="grey"><feColorMatrix type="saturate" values="0"/></filter></defs><rect width="1600" height="984" fill="#f7f7f4"/><text x="60" y="78" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#161616">Logo concepts</text><text x="60" y="116" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" fill="#6b6b6b">Concepts for review — pick a direction (or tell me what you like in each).</text><rect x="60" y="150" width="474.667" height="774" rx="18" fill="#fff" stroke="#161616" stroke-width="2"/><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-a" viewBox="0 0 256 256" x="90" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c0-title-a">ZEEKS - Concept A: Monogramme Z Dynamique</title>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M36 40 H220 V78 L120 178 H220 V216 H36 V178 L136 78 H36 V40 Z M168 78 H188 L88 178 H68 L168 78 Z" fill="#000000"/>
+</svg>
+</g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 764 256" x="90" y="514" width="414.667" height="120" preserveAspectRatio="xMidYMid meet">
+<title>ZEEKS - Concept A Horizontal Lockup</title>
+<!-- Brand Symbol: Kinetic Monogram Z -->
+<path id="l0-symbol" fill-rule="evenodd" clip-rule="evenodd" d="M36 40 H220 V78 L120 178 H220 V216 H36 V178 L136 78 H36 V40 Z M168 78 H188 L88 178 H68 L168 78 Z" fill="#000000"/>
+<!-- Brand Wordmark: ZEEKS (Outlined Vectors) -->
+<path id="l0-wordmark" d="M 363.42 178.00 L 282.86 178.00 L 282.86 165.03 L 334.12 96.34 L 286.56 96.34 L 286.56 78.00 L 363.26 78.00 L 363.26 90.61 L 313.12 159.72 L 363.42 159.72 L 363.42 178.00 Z M 446.83 178.00 L 386.87 178.00 L 386.87 78.00 L 444.53 78.00 L 444.53 96.34 L 409.38 96.34 L 409.38 118.57 L 442.10 118.57 L 442.10 136.85 L 409.38 136.85 L 409.38 159.72 L 446.83 159.72 L 446.83 178.00 Z M 532.24 178.00 L 472.28 178.00 L 472.28 78.00 L 529.95 78.00 L 529.95 96.34 L 494.80 96.34 L 494.80 118.57 L 527.51 118.57 L 527.51 136.85 L 494.80 136.85 L 494.80 159.72 L 532.24 159.72 L 532.24 178.00 Z M 640.82 178.00 L 612.37 178.00 L 583.20 134.55 Q 582.37 133.30 580.57 129.04 L 580.21 129.04 L 580.21 178.00 L 557.69 178.00 L 557.69 78.00 L 580.21 78.00 L 580.21 125.27 L 580.57 125.27 Q 581.39 123.32 583.36 119.69 L 610.96 78.00 L 637.81 78.00 L 602.95 125.69 L 640.82 178.00 Z M 659.65 174.16 L 659.65 151.85 Q 665.72 156.93 672.84 159.48 Q 679.96 162.02 687.21 162.02 Q 691.45 162.02 694.62 161.26 Q 697.81 160.50 699.93 159.14 Q 702.05 157.78 703.10 155.93 Q 704.15 154.08 704.15 151.91 Q 704.15 148.99 702.48 146.69 Q 700.80 144.39 697.90 142.45 Q 695.02 140.49 691.03 138.68 Q 687.05 136.85 682.46 134.97 Q 670.74 130.09 664.98 123.06 Q 659.25 116.00 659.25 106.03 Q 659.25 98.22 662.37 92.62 Q 665.52 86.99 670.92 83.38 Q 676.32 79.74 683.44 78.04 Q 690.56 76.33 698.50 76.33 Q 706.31 76.33 712.34 77.26 Q 718.39 78.20 723.48 80.16 L 723.48 101.01 Q 720.95 99.27 717.99 97.95 Q 715.04 96.61 711.89 95.74 Q 708.75 94.87 705.64 94.45 Q 702.54 94.02 699.75 94.02 Q 695.91 94.02 692.77 94.76 Q 689.64 95.50 687.48 96.84 Q 685.31 98.15 684.13 100.00 Q 682.95 101.83 682.95 104.15 Q 682.95 106.65 684.27 108.64 Q 685.60 110.63 688.04 112.41 Q 690.49 114.20 693.97 115.92 Q 697.45 117.61 701.85 119.42 Q 707.85 121.92 712.63 124.75 Q 717.41 127.59 720.82 131.14 Q 724.23 134.68 726.04 139.26 Q 727.87 143.83 727.87 149.90 Q 727.87 158.27 724.68 163.96 Q 721.51 169.63 716.07 173.16 Q 710.64 176.68 703.41 178.20 Q 696.20 179.74 688.17 179.74 Q 679.96 179.74 672.53 178.33 Q 665.10 176.95 659.65 174.16 Z" fill="#000000"/>
+</svg></g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-a" viewBox="0 0 256 256" x="90" y="660" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s064-title-a">ZEEKS - Concept A: Monogramme Z Dynamique</title>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M36 40 H220 V78 L120 178 H220 V216 H36 V178 L136 78 H36 V40 Z M168 78 H188 L88 178 H68 L168 78 Z" fill="#000000"/>
+</svg>
+</g><text x="122" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-a" viewBox="0 0 256 256" x="180" y="692" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s032-title-a">ZEEKS - Concept A: Monogramme Z Dynamique</title>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M36 40 H220 V78 L120 178 H220 V216 H36 V178 L136 78 H36 V40 Z M168 78 H188 L88 178 H68 L168 78 Z" fill="#000000"/>
+</svg>
+</g><text x="196" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-a" viewBox="0 0 256 256" x="238" y="708" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s016-title-a">ZEEKS - Concept A: Monogramme Z Dynamique</title>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M36 40 H220 V78 L120 178 H220 V216 H36 V178 L136 78 H36 V40 Z M168 78 H188 L88 178 H68 L168 78 Z" fill="#000000"/>
+</svg>
+</g><text x="246" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="90.0" y="780" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">A · Concept A (Monogramme Z Dynamique)</text><text x="90.0" y="808" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#161616" letter-spacing="1.5">RECOMMENDED</text><text x="90.0" y="842" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Impulsion acoustique &amp; cadre 16:9 dans le Z</text><rect x="562.667" y="150" width="474.667" height="774" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="592.667" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B (Metamorphosis / Acoustic Wave to Viewport Frame)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D oscillation) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#000000"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#000000"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#000000"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#000000"/>
+</svg>
+</g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 256" x="592.667" y="514" width="414.667" height="120" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B Lockup (Symbol + Wordmark)</title>
+  
+  <!-- SYMBOL: Metamorphosis (Acoustic Wave to Viewport Frame) -->
+  <g id="l1-symbol">
+    <!-- Acoustic Waveform Frequency Bars (1D oscillation) -->
+    <rect x="50" y="108" width="16" height="40" rx="8" fill="#000000"/>
+    <rect x="78" y="70" width="16" height="116" rx="8" fill="#000000"/>
+    <rect x="106" y="92" width="16" height="72" rx="8" fill="#000000"/>
+    <!-- Video Viewport Frame (2D Screen Aperture) -->
+    <path fill-rule="evenodd" d="
+      M 150 74
+      L 242 74
+      A 16 16 0 0 1 258 90
+      L 258 166
+      A 16 16 0 0 1 242 182
+      L 150 182
+      A 16 16 0 0 1 134 166
+      L 134 90
+      A 16 16 0 0 1 150 74 Z
+      M 154 92
+      L 238 92
+      A 6 6 0 0 1 244 98
+      L 244 158
+      A 6 6 0 0 1 238 164
+      L 154 164
+      A 6 6 0 0 1 148 158
+      L 148 98
+      A 6 6 0 0 1 154 92 Z" fill="#000000"/>
+  </g>
+
+  <!-- WORDMARK: ZEEKS (Pure geometric vector outlines) -->
+  <g id="l1-wordmark" fill="#000000">
+    <!-- Letter Z -->
+    <path d="M 318 92 L 372 92 L 372 108 L 340 148 L 372 148 L 372 164 L 318 164 L 318 148 L 350 108 L 318 108 Z"/>
+    <!-- Letter E -->
+    <path d="M 388 92 L 434 92 L 434 107 L 404 107 L 404 120 L 430 120 L 430 134 L 404 134 L 404 149 L 434 149 L 434 164 L 388 164 Z"/>
+    <!-- Letter E -->
+    <path d="M 450 92 L 496 92 L 496 107 L 466 107 L 466 120 L 492 120 L 492 134 L 466 134 L 466 149 L 496 149 L 496 164 L 450 164 Z"/>
+    <!-- Letter K -->
+    <path d="M 512 92 L 528 92 L 528 120 L 547 92 L 566 92 L 539 128 L 567 164 L 547 164 L 528 138 L 528 164 L 512 164 Z"/>
+    <!-- Letter S -->
+    <path d="M 626 108 L 611 108 C 611 106, 607 104, 602 104 C 596 104, 593 107, 593 111 C 593 116, 597 119, 605 122 L 611 124 C 622 128, 628 135, 628 144 C 628 156, 618 164, 604 164 C 589 164, 580 155, 580 144 L 595 144 C 595 149, 599 152, 604 152 C 610 152, 613 149, 613 145 C 613 140, 609 137, 601 134 L 595 132 C 585 128, 579 121, 579 112 C 579 100, 589 92, 603 92 C 617 92, 626 100, 626 108 Z"/>
+  </g>
+</svg>
+</g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="592.667" y="660" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B (Metamorphosis / Acoustic Wave to Viewport Frame)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D oscillation) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#000000"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#000000"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#000000"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#000000"/>
+</svg>
+</g><text x="624.667" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="682.667" y="692" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B (Metamorphosis / Acoustic Wave to Viewport Frame)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D oscillation) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#000000"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#000000"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#000000"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#000000"/>
+</svg>
+</g><text x="698.667" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="740.667" y="708" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B (Metamorphosis / Acoustic Wave to Viewport Frame)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D oscillation) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#000000"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#000000"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#000000"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#000000"/>
+</svg>
+</g><text x="748.667" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="592.6666666666667" y="780" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">B · Concept B (Onde vers Cadre)</text><text x="592.6666666666667" y="814" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Vibration linéaire se résolvant en surface</text><text x="592.6666666666667" y="840" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">écran</text><rect x="1065.33" y="150" width="474.667" height="774" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 256 256" x="1095.33" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <title id="c2-title">ZEEKS Logo - Concept C (Resonance &amp; Perspective)</title>
+  <g fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave (Expanding into Perspective Space) -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+</svg>
+</g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 738 256" x="1095.33" y="514" width="414.667" height="120" preserveAspectRatio="xMidYMid meet">
+  <title id="l2-title">ZEEKS Logo Lockup - Concept C (Resonance &amp; Perspective)</title>
+  <g id="l2-symbol" fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+  <g id="l2-wordmark" fill="#000000">
+    <!-- Letter Z -->
+    <path d="M 284 80 H 354 V 100 L 308 156 H 354 V 176 H 284 V 156 L 330 100 H 284 Z" />
+    <!-- Letter E -->
+    <path d="M 378 80 H 440 V 100 H 398 V 118 H 430 V 138 H 398 V 156 H 440 V 176 H 378 Z" />
+    <!-- Letter E -->
+    <path d="M 460 80 H 522 V 100 H 480 V 118 H 512 V 138 H 480 V 156 H 522 V 176 H 460 Z" />
+    <!-- Letter K (Pure 45° Branches) -->
+    <path d="M 542 80 H 562 V 99.72 L 581.72 80 H 610 L 562 128 L 610 176 H 581.72 L 562 156.28 V 176 H 542 Z" />
+    <!-- Letter S (Geometric Grotesque Curves) -->
+    <path d="M 694 104 H 674 V 100 C 674 96 670 96 662 96 C 650 96 650 102 650 108 C 650 118 662 122 674 126 C 688 130 694 136 694 152 C 694 168 682 176 662 176 C 642 176 630 168 630 152 H 650 V 156 C 650 160 654 160 662 160 C 674 160 674 154 674 148 C 674 138 662 134 650 130 C 636 126 630 120 630 104 C 630 88 642 80 662 80 C 682 80 694 88 694 104 Z" />
+  </g>
+</svg>
+</g><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 256 256" x="1095.33" y="660" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title id="s264-title">ZEEKS Logo - Concept C (Resonance &amp; Perspective)</title>
+  <g fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave (Expanding into Perspective Space) -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+</svg>
+</g><text x="1127.33" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 256 256" x="1185.33" y="692" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title id="s232-title">ZEEKS Logo - Concept C (Resonance &amp; Perspective)</title>
+  <g fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave (Expanding into Perspective Space) -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+</svg>
+</g><text x="1201.33" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g filter="url(#grey)"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 256 256" x="1243.33" y="708" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title id="s216-title">ZEEKS Logo - Concept C (Resonance &amp; Perspective)</title>
+  <g fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave (Expanding into Perspective Space) -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+</svg>
+</g><text x="1251.33" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="1095.3333333333335" y="780" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">C · Concept C (Projection Résonance)</text><text x="1095.3333333333335" y="814" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Foyer d&#x27;onde acoustique projeté en</text><text x="1095.3333333333335" y="840" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">perspective</text></svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738 256" width="738" height="256" role="img" aria-labelledby="title">
+  <title id="title">ZEEKS Logo Lockup - Concept C (Resonance &amp; Perspective)</title>
+  <g id="symbol" fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+  <g id="wordmark" fill="#000000">
+    <!-- Letter Z -->
+    <path d="M 284 80 H 354 V 100 L 308 156 H 354 V 176 H 284 V 156 L 330 100 H 284 Z" />
+    <!-- Letter E -->
+    <path d="M 378 80 H 440 V 100 H 398 V 118 H 430 V 138 H 398 V 156 H 440 V 176 H 378 Z" />
+    <!-- Letter E -->
+    <path d="M 460 80 H 522 V 100 H 480 V 118 H 512 V 138 H 480 V 156 H 522 V 176 H 460 Z" />
+    <!-- Letter K (Pure 45° Branches) -->
+    <path d="M 542 80 H 562 V 99.72 L 581.72 80 H 610 L 562 128 L 610 176 H 581.72 L 562 156.28 V 176 H 542 Z" />
+    <!-- Letter S (Geometric Grotesque Curves) -->
+    <path d="M 694 104 H 674 V 100 C 674 96 670 96 662 96 C 650 96 650 102 650 108 C 650 118 662 122 674 126 C 688 130 694 136 694 152 C 694 168 682 176 662 176 C 642 176 630 168 630 152 H 650 V 156 C 650 160 654 160 662 160 C 674 160 674 154 674 148 C 674 138 662 134 650 130 C 636 126 630 120 630 104 C 630 88 642 80 662 80 C 682 80 694 88 694 104 Z" />
+  </g>
+</svg>

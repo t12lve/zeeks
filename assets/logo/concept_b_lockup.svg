@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 256" width="678" height="256">
+  <title>ZEEKS - Concept B Lockup (Symbol + Wordmark)</title>
+  
+  <!-- SYMBOL: Metamorphosis (Acoustic Wave to Viewport Frame) -->
+  <g id="symbol">
+    <!-- Acoustic Waveform Frequency Bars (1D oscillation) -->
+    <rect x="50" y="108" width="16" height="40" rx="8" fill="#000000"/>
+    <rect x="78" y="70" width="16" height="116" rx="8" fill="#000000"/>
+    <rect x="106" y="92" width="16" height="72" rx="8" fill="#000000"/>
+    <!-- Video Viewport Frame (2D Screen Aperture) -->
+    <path fill-rule="evenodd" d="
+      M 150 74
+      L 242 74
+      A 16 16 0 0 1 258 90
+      L 258 166
+      A 16 16 0 0 1 242 182
+      L 150 182
+      A 16 16 0 0 1 134 166
+      L 134 90
+      A 16 16 0 0 1 150 74 Z
+      M 154 92
+      L 238 92
+      A 6 6 0 0 1 244 98
+      L 244 158
+      A 6 6 0 0 1 238 164
+      L 154 164
+      A 6 6 0 0 1 148 158
+      L 148 98
+      A 6 6 0 0 1 154 92 Z" fill="#000000"/>
+  </g>
+
+  <!-- WORDMARK: ZEEKS (Pure geometric vector outlines) -->
+  <g id="wordmark" fill="#000000">
+    <!-- Letter Z -->
+    <path d="M 318 92 L 372 92 L 372 108 L 340 148 L 372 148 L 372 164 L 318 164 L 318 148 L 350 108 L 318 108 Z"/>
+    <!-- Letter E -->
+    <path d="M 388 92 L 434 92 L 434 107 L 404 107 L 404 120 L 430 120 L 430 134 L 404 134 L 404 149 L 434 149 L 434 164 L 388 164 Z"/>
+    <!-- Letter E -->
+    <path d="M 450 92 L 496 92 L 496 107 L 466 107 L 466 120 L 492 120 L 492 134 L 466 134 L 466 149 L 496 149 L 496 164 L 450 164 Z"/>
+    <!-- Letter K -->
+    <path d="M 512 92 L 528 92 L 528 120 L 547 92 L 566 92 L 539 128 L 567 164 L 547 164 L 528 138 L 528 164 L 512 164 Z"/>
+    <!-- Letter S -->
+    <path d="M 626 108 L 611 108 C 611 106, 607 104, 602 104 C 596 104, 593 107, 593 111 C 593 116, 597 119, 605 122 L 611 124 C 622 128, 628 135, 628 144 C 628 156, 618 164, 604 164 C 589 164, 580 155, 580 144 L 595 144 C 595 149, 599 152, 604 152 C 610 152, 613 149, 613 145 C 613 140, 609 137, 601 134 L 595 132 C 585 128, 579 121, 579 112 C 579 100, 589 92, 603 92 C 617 92, 626 100, 626 108 Z"/>
+  </g>
+</svg>

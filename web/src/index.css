@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --bg-chassis: #0B0F19;
+  --bg-rack: #101624;
+  --bg-rack-face: #141C2E;
+  --bg-card: #162035;
+  --border-rack: #22304C;
+  --border-highlight: rgba(255, 255, 255, 0.08);
+  --color-amber: #EA580C;
+  --color-amber-light: #F97316;
+  --color-amber-glow: rgba(234, 88, 12, 0.45);
+  --color-blue: #2563EB;
+  --color-blue-light: #3B82F6;
+  --color-blue-glow: rgba(37, 99, 235, 0.45);
+  --meter-face: #FFFBEB;
+  --meter-face-dark: #1F1912;
+  --meter-glow: rgba(234, 88, 12, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-chassis);
+  color: #E2E8F0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-display {
+  font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
+}
+
+/* Studio rack styling */
+.rack-case {
+  background: linear-gradient(180deg, #1A243B 0%, #101726 100%);
+  border: 1px solid var(--border-rack);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.rack-screw {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #94A3B8 0%, #334155 70%, #0F172A 100%);
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.6),
+    0 1px 3px rgba(0, 0, 0, 0.8);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rack-screw::before {
+  content: '';
+  width: 8px;
+  height: 2px;
+  background: #0F172A;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: rotate(35deg);
+}
+
+.rack-ear {
+  background: linear-gradient(90deg, #0F1523 0%, #1A243A 60%, #0D1321 100%);
+  border-right: 1px solid var(--border-rack);
+}
+
+/* Analog VU Meter styling */
+.vu-meter-bezel {
+  background: linear-gradient(180deg, #0A0D15 0%, #151D2F 100%);
+  border: 2px solid #2B3A57;
+  border-radius: 12px;
+  box-shadow: 
+    inset 0 2px 6px rgba(0, 0, 0, 0.9),
+    0 4px 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.vu-meter-backlight {
+  background: radial-gradient(ellipse at 50% 85%, rgba(234, 88, 12, 0.28) 0%, rgba(234, 88, 12, 0.08) 55%, transparent 75%);
+}
+
+.vu-meter-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.01) 40%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Subtle amber & blue neon glows */
+.amber-glow {
+  text-shadow: 0 0 12px rgba(234, 88, 12, 0.65);
+}
+
+.amber-box-glow {
+  box-shadow: 0 0 20px -3px rgba(234, 88, 12, 0.4);
+}
+
+.blue-box-glow {
+  box-shadow: 0 0 20px -3px rgba(37, 99, 235, 0.4);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

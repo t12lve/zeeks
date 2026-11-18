@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="984" viewBox="0 0 1600 984"><rect width="1600" height="984" fill="#f7f7f4"/><text x="60" y="78" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#161616">ZEEKS — Déclinaisons Couleur Concept B</text><text x="60" y="116" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" fill="#6b6b6b">Harmonie complémentaire : Bleu Roi #2563EB &amp; Orange Ambré #EA580C</text><rect x="60" y="150" width="726" height="774" rx="18" fill="#fff" stroke="#161616" stroke-width="2"/><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="90" y="190" width="666" height="300" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B1 (Acoustic Wave: Warm Amber / Viewport Frame: Royal Blue)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in warm energetic amber orange) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#EA580C"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#EA580C"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in structured noble Royal Blue) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#2563EB"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 256" x="90" y="514" width="666" height="120" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B1 Lockup (Amber / Royal Blue)</title>
+  
+  <!-- SYMBOL: Metamorphosis (Acoustic Wave to Viewport Frame) -->
+  <g id="l0-symbol">
+    <!-- Acoustic Waveform Frequency Bars (Warm energetic amber orange) -->
+    <rect x="50" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+    <rect x="78" y="70" width="16" height="116" rx="8" fill="#EA580C"/>
+    <rect x="106" y="92" width="16" height="72" rx="8" fill="#EA580C"/>
+    <!-- Video Viewport Frame (Structured noble Royal Blue) -->
+    <path fill-rule="evenodd" d="
+      M 150 74
+      L 242 74
+      A 16 16 0 0 1 258 90
+      L 258 166
+      A 16 16 0 0 1 242 182
+      L 150 182
+      A 16 16 0 0 1 134 166
+      L 134 90
+      A 16 16 0 0 1 150 74 Z
+      M 154 92
+      L 238 92
+      A 6 6 0 0 1 244 98
+      L 244 158
+      A 6 6 0 0 1 238 164
+      L 154 164
+      A 6 6 0 0 1 148 158
+      L 148 98
+      A 6 6 0 0 1 154 92 Z" fill="#2563EB"/>
+  </g>
+
+  <!-- WORDMARK: ZEEKS (Pure geometric vector outlines in Royal Blue) -->
+  <g id="l0-wordmark" fill="#2563EB">
+    <!-- Letter Z -->
+    <path d="M 318 92 L 372 92 L 372 108 L 340 148 L 372 148 L 372 164 L 318 164 L 318 148 L 350 108 L 318 108 Z"/>
+    <!-- Letter E -->
+    <path d="M 388 92 L 434 92 L 434 107 L 404 107 L 404 120 L 430 120 L 430 134 L 404 134 L 404 149 L 434 149 L 434 164 L 388 164 Z"/>
+    <!-- Letter E -->
+    <path d="M 450 92 L 496 92 L 496 107 L 466 107 L 466 120 L 492 120 L 492 134 L 466 134 L 466 149 L 496 149 L 496 164 L 450 164 Z"/>
+    <!-- Letter K -->
+    <path d="M 512 92 L 528 92 L 528 120 L 547 92 L 566 92 L 539 128 L 567 164 L 547 164 L 528 138 L 528 164 L 512 164 Z"/>
+    <!-- Letter S -->
+    <path d="M 626 108 L 611 108 C 611 106, 607 104, 602 104 C 596 104, 593 107, 593 111 C 593 116, 597 119, 605 122 L 611 124 C 622 128, 628 135, 628 144 C 628 156, 618 164, 604 164 C 589 164, 580 155, 580 144 L 595 144 C 595 149, 599 152, 604 152 C 610 152, 613 149, 613 145 C 613 140, 609 137, 601 134 L 595 132 C 585 128, 579 121, 579 112 C 579 100, 589 92, 603 92 C 617 92, 626 100, 626 108 Z"/>
+  </g>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="90" y="660" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B1 (Acoustic Wave: Warm Amber / Viewport Frame: Royal Blue)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in warm energetic amber orange) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#EA580C"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#EA580C"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in structured noble Royal Blue) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#2563EB"/>
+</svg>
+</g><text x="122" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="180" y="692" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B1 (Acoustic Wave: Warm Amber / Viewport Frame: Royal Blue)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in warm energetic amber orange) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#EA580C"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#EA580C"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in structured noble Royal Blue) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#2563EB"/>
+</svg>
+</g><text x="196" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="238" y="708" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B1 (Acoustic Wave: Warm Amber / Viewport Frame: Royal Blue)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in warm energetic amber orange) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#EA580C"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#EA580C"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#EA580C"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in structured noble Royal Blue) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#2563EB"/>
+</svg>
+</g><text x="246" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="90.0" y="780" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">A · Variation B1 (Onde Ambre -&gt; Écran Bleu)</text><text x="90.0" y="808" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#161616" letter-spacing="1.5">RECOMMENDED</text><text x="90.0" y="842" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">L&#x27;énergie acoustique brute (ambre) se résout en clarté vidéo</text><text x="90.0" y="868" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">structurée (bleu roi)</text><rect x="814" y="150" width="726" height="774" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="844" y="190" width="666" height="300" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B2 (Acoustic Wave: Royal Blue / Viewport Frame: Warm Amber)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in noble Royal Blue) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#2563EB"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#2563EB"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in radiant warm amber orange) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#EA580C"/>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 256" x="844" y="514" width="666" height="120" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B2 Lockup (Royal Blue / Amber)</title>
+  
+  <!-- SYMBOL: Metamorphosis (Acoustic Wave to Viewport Frame) -->
+  <g id="l1-symbol">
+    <!-- Acoustic Waveform Frequency Bars (Noble Royal Blue) -->
+    <rect x="50" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+    <rect x="78" y="70" width="16" height="116" rx="8" fill="#2563EB"/>
+    <rect x="106" y="92" width="16" height="72" rx="8" fill="#2563EB"/>
+    <!-- Video Viewport Frame (Radiant warm amber orange) -->
+    <path fill-rule="evenodd" d="
+      M 150 74
+      L 242 74
+      A 16 16 0 0 1 258 90
+      L 258 166
+      A 16 16 0 0 1 242 182
+      L 150 182
+      A 16 16 0 0 1 134 166
+      L 134 90
+      A 16 16 0 0 1 150 74 Z
+      M 154 92
+      L 238 92
+      A 6 6 0 0 1 244 98
+      L 244 158
+      A 6 6 0 0 1 238 164
+      L 154 164
+      A 6 6 0 0 1 148 158
+      L 148 98
+      A 6 6 0 0 1 154 92 Z" fill="#EA580C"/>
+  </g>
+
+  <!-- WORDMARK: ZEEKS (Pure geometric vector outlines in Royal Blue) -->
+  <g id="l1-wordmark" fill="#2563EB">
+    <!-- Letter Z -->
+    <path d="M 318 92 L 372 92 L 372 108 L 340 148 L 372 148 L 372 164 L 318 164 L 318 148 L 350 108 L 318 108 Z"/>
+    <!-- Letter E -->
+    <path d="M 388 92 L 434 92 L 434 107 L 404 107 L 404 120 L 430 120 L 430 134 L 404 134 L 404 149 L 434 149 L 434 164 L 388 164 Z"/>
+    <!-- Letter E -->
+    <path d="M 450 92 L 496 92 L 496 107 L 466 107 L 466 120 L 492 120 L 492 134 L 466 134 L 466 149 L 496 149 L 496 164 L 450 164 Z"/>
+    <!-- Letter K -->
+    <path d="M 512 92 L 528 92 L 528 120 L 547 92 L 566 92 L 539 128 L 567 164 L 547 164 L 528 138 L 528 164 L 512 164 Z"/>
+    <!-- Letter S -->
+    <path d="M 626 108 L 611 108 C 611 106, 607 104, 602 104 C 596 104, 593 107, 593 111 C 593 116, 597 119, 605 122 L 611 124 C 622 128, 628 135, 628 144 C 628 156, 618 164, 604 164 C 589 164, 580 155, 580 144 L 595 144 C 595 149, 599 152, 604 152 C 610 152, 613 149, 613 145 C 613 140, 609 137, 601 134 L 595 132 C 585 128, 579 121, 579 112 C 579 100, 589 92, 603 92 C 617 92, 626 100, 626 108 Z"/>
+  </g>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="844" y="660" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B2 (Acoustic Wave: Royal Blue / Viewport Frame: Warm Amber)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in noble Royal Blue) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#2563EB"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#2563EB"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in radiant warm amber orange) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#EA580C"/>
+</svg>
+</g><text x="876" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="934" y="692" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B2 (Acoustic Wave: Royal Blue / Viewport Frame: Warm Amber)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in noble Royal Blue) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#2563EB"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#2563EB"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in radiant warm amber orange) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#EA580C"/>
+</svg>
+</g><text x="950" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" x="992" y="708" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <title>ZEEKS - Concept B2 (Acoustic Wave: Royal Blue / Viewport Frame: Warm Amber)</title>
+  <!-- Acoustic Waveform Envelope (Sound: 1D vibration in noble Royal Blue) -->
+  <rect x="24" y="108" width="16" height="40" rx="8" fill="#2563EB"/>
+  <rect x="52" y="70" width="16" height="116" rx="8" fill="#2563EB"/>
+  <rect x="80" y="92" width="16" height="72" rx="8" fill="#2563EB"/>
+  <!-- Video Viewport Frame (Resolution: 2D Screen Aperture in radiant warm amber orange) -->
+  <path fill-rule="evenodd" d="
+    M 124 74
+    L 216 74
+    A 16 16 0 0 1 232 90
+    L 232 166
+    A 16 16 0 0 1 216 182
+    L 124 182
+    A 16 16 0 0 1 108 166
+    L 108 90
+    A 16 16 0 0 1 124 74 Z
+    M 128 92
+    L 212 92
+    A 6 6 0 0 1 218 98
+    L 218 158
+    A 6 6 0 0 1 212 164
+    L 128 164
+    A 6 6 0 0 1 122 158
+    L 122 98
+    A 6 6 0 0 1 128 92 Z" fill="#EA580C"/>
+</svg>
+</g><text x="1000" y="744" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="844.0" y="780" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">B · Variation B2 (Onde Bleu -&gt; Écran Ambre)</text><text x="844.0" y="814" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">La fréquence bleue se cristallise en cadre d&#x27;attention ambré</text></svg>

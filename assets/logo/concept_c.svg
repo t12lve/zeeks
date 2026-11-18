@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">ZEEKS Logo - Concept C (Resonance &amp; Perspective)</title>
+  <g fill="#000000">
+    <!-- 1. Acoustic Focal Origin (Sound Pulse Dot) -->
+    <circle cx="48" cy="128" r="16" />
+
+    <!-- 2. Primary Acoustic Resonance Wave -->
+    <path d="M 89.01 86.99 A 58 58 0 0 1 89.01 169.01 L 76.28 156.28 A 40 40 0 0 0 76.28 99.72 Z" />
+
+    <!-- 3. Secondary Resonance Wave (Expanding into Perspective Space) -->
+    <path d="M 132.87 79.00 A 98 98 0 0 1 132.87 177.00 L 117.28 168.00 A 80 80 0 0 0 117.28 88.00 Z" />
+
+    <!-- 4. Video Viewport Frame (16:9 Perspective Screen Frustum) -->
+    <path fill-rule="evenodd" d="M 142 68 L 222 46.56 L 222 209.44 L 142 188 Z M 158 82 L 206 69.14 L 206 186.86 L 158 174 Z" />
+  </g>
+</svg>
