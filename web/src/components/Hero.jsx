@@ -1,80 +1,70 @@
 import React from 'react';
-import { Download, Play, ShieldCheck, Zap, Laptop, Music, Sparkles } from 'lucide-react';
+import { Download, Play, Shield, Laptop, Zap } from 'lucide-react';
+import { GithubIcon } from './Icons';
 
 export default function Hero() {
   return (
-    <section className="relative pt-12 pb-8 px-4 text-center overflow-hidden">
-      
-      {/* Background Studio Ambient Gradients */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-amber-600/15 via-blue-600/15 to-transparent blur-[120px] pointer-events-none rounded-full" />
-
-      <div className="max-w-4xl mx-auto relative z-10">
+    <section className="pt-16 pb-12 px-6 text-center">
+      <div className="max-w-3xl mx-auto">
         
-        {/* Top Release Pill */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131A2B] border border-slate-700/80 shadow-md mb-6">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34D399] animate-pulse" />
-          <span className="text-xs font-mono font-bold text-amber-300">ZEEKS v0.2.0 DISPONIBLE</span>
-          <span className="text-slate-500">•</span>
-          <span className="text-xs font-mono text-slate-300">Édition Studio & VU-Mètre Stéréo</span>
+        {/* Release Tag */}
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-slate-300 mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+          <span>ZEEKS v0.2.0 pour Windows</span>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-black tracking-tight text-white mb-6 leading-[1.1]">
-          Vos MP3 en Vidéos MP4.<br />
-          <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-blue-500 bg-clip-text text-transparent">
-            100% en Local. Zéro Cloud.
-          </span>
+        <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-slate-100 mb-5 leading-[1.15]">
+          Vos fichiers audio en vidéo MP4.<br />
+          100 % en local sur votre PC.
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-          L'équivalent des convertisseurs en ligne, mais sur votre PC : ultra-rapide (30s en ~2s),
-          sans upload, sans compte, avec formats 16:9, 9:16 (TikTok/Reels), 1:1 et fonds animés.
-          Écrit en <strong className="text-slate-100 font-semibold">Rust natif</strong> avec l'API officielle Windows Media Foundation.
+        <p className="text-base text-slate-400 max-w-xl mx-auto mb-9 font-normal leading-relaxed">
+          Un MP3, une image de pochette, et une vidéo 1080p prête pour YouTube, TikTok ou Instagram.
+          Zéro upload vers un serveur, aucun compte, accéléré par Windows Media Foundation.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+        {/* Primary CTA & Secondary Action */}
+        <div className="flex flex-wrap items-center justify-center gap-3.5 mb-12">
           <a
             href="https://github.com/t12lve/zeeks/releases/download/v0.2.0/zeeks.exe"
-            className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:brightness-110 text-slate-950 font-display font-black text-sm tracking-wider uppercase transition-all shadow-[0_0_25px_rgba(234,88,12,0.45)] flex items-center gap-2.5"
+            className="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-colors flex items-center gap-2 shadow-sm"
           >
-            <Download className="w-4 h-4 stroke-[2.5]" />
-            <span>TÉLÉCHARGER ZEEKS.EXE (11 Mo)</span>
+            <Download className="w-4 h-4" />
+            <span>Télécharger zeeks.exe</span>
+            <span className="text-xs text-blue-200 font-mono">11 Mo</span>
           </a>
 
           <a
-            href="#vumeter"
-            className="px-6 py-3.5 rounded-xl bg-[#141C2E] hover:bg-[#1B253D] text-slate-200 border border-slate-700 font-display font-bold text-sm tracking-wider uppercase transition-all flex items-center gap-2"
+            href="https://github.com/t12lve/zeeks"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2.5 rounded-lg bg-white/[0.05] hover:bg-white/[0.08] text-slate-300 border border-white/10 font-medium text-sm transition-colors flex items-center gap-2"
           >
-            <Play className="w-4 h-4 text-amber-400 fill-amber-400" />
-            <span>TESTER LE VU-MÈTRE EN DIRECT</span>
+            <GithubIcon className="w-4 h-4" />
+            <span>Code source</span>
           </a>
         </div>
 
-        {/* Key Guarantee Badges */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto pt-4 border-t border-slate-800/80">
-          
-          <div className="flex items-center gap-2 justify-center text-xs font-mono text-slate-300">
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>100% Hors-Ligne & Privé</span>
+        {/* Key Attributes row */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/[0.06] text-xs text-slate-400">
+          <div className="flex items-center justify-center gap-2">
+            <Shield className="w-3.5 h-3.5 text-slate-400" />
+            <span>100 % hors-ligne</span>
           </div>
-
-          <div className="flex items-center gap-2 justify-center text-xs font-mono text-slate-300">
-            <Zap className="w-4 h-4 text-amber-400" />
-            <span>Encodage GPU ~2 sec</span>
+          <div className="flex items-center justify-center gap-2">
+            <Zap className="w-3.5 h-3.5 text-slate-400" />
+            <span>Rendu matériel H.264</span>
           </div>
-
-          <div className="flex items-center gap-2 justify-center text-xs font-mono text-slate-300">
-            <Laptop className="w-4 h-4 text-blue-400" />
-            <span>Un seul .exe (11 Mo)</span>
+          <div className="flex items-center justify-center gap-2">
+            <Laptop className="w-3.5 h-3.5 text-slate-400" />
+            <span>Exécutable portable</span>
           </div>
-
-          <div className="flex items-center gap-2 justify-center text-xs font-mono text-slate-300">
-            <Sparkles className="w-4 h-4 text-indigo-400" />
-            <span>Zéro FFmpeg externe</span>
+          <div className="flex items-center justify-center gap-2">
+            <span className="w-3.5 h-3.5 flex items-center justify-center font-mono text-[10px] text-slate-400 border border-slate-600 rounded">16</span>
+            <span>Formats 16:9, 9:16, 1:1</span>
           </div>
-
         </div>
 
       </div>
