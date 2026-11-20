@@ -4,31 +4,31 @@ import { GithubIcon } from './Icons';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-[#090B10] py-10 px-6 text-xs text-slate-500">
-      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+    <footer className="border-t border-white/10 bg-[#050608] py-16 px-4 sm:px-8 text-xs font-mono text-slate-500">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         
-        {/* Brand & Note */}
+        {/* Brand & Meta */}
         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
           <Logo className="h-6 w-auto" />
-          <span className="text-slate-500 text-xs hidden sm:inline">·</span>
-          <span className="text-slate-500 text-xs">
-            Audio vers Vidéo en local pour Windows
+          <span className="text-slate-700 hidden sm:inline">|</span>
+          <span className="text-slate-400">
+            ZEEKS v0.2.0 · NATIVE WIN64 AUDIO/VIDEO WORKSTATION · OPEN SOURCE
           </span>
         </div>
 
-        {/* Links & Source */}
-        <div className="flex items-center gap-5 text-xs text-slate-400">
-          <a href="#top" className="hover:text-slate-200 transition-colors">
-            Haut de page
+        {/* Links */}
+        <div className="flex items-center gap-6 text-slate-400">
+          <a href="#top" className="hover:text-white transition-colors uppercase tracking-wider">
+            [ HAUT DE PAGE ↑ ]
           </a>
           <a
             href="https://github.com/t12lve/zeeks"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-slate-200 transition-colors flex items-center gap-1.5"
+            className="hover:text-white transition-colors flex items-center gap-2 uppercase tracking-wider"
           >
-            <GithubIcon className="w-3.5 h-3.5" />
-            <span>GitHub</span>
+            <GithubIcon className="w-4 h-4" />
+            <span>GITHUB</span>
           </a>
         </div>
 

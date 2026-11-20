@@ -54,11 +54,11 @@ export default function MusicWaves() {
     if (!container) return;
 
     let width = container.clientWidth || 800;
-    let height = container.clientHeight || 360;
+    let height = container.clientHeight || 450;
 
     // Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x0b0d13);
+    scene.background = new THREE.Color(0x08090d);
 
     // Camera
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
@@ -71,7 +71,7 @@ export default function MusicWaves() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // Parameters for Minimalist Waveforms
+    // Parameters for Waveforms
     const NUM_LINES = 26;
     const POINTS_PER_LINE = 100;
     const LINE_WIDTH = 220;
@@ -79,7 +79,7 @@ export default function MusicWaves() {
 
     const lineObjects = [];
 
-    // Color definitions
+    // Colors matching ZEEKS brand identity
     const amberColor = new THREE.Color(0xea580c); // ZEEKS brand orange
     const blueColor = new THREE.Color(0x2563eb);  // ZEEKS brand royal blue
     const whiteColor = new THREE.Color(0xf1f5f9);
@@ -89,7 +89,7 @@ export default function MusicWaves() {
       const positions = new Float32Array(POINTS_PER_LINE * 3);
       const colors = new Float32Array(POINTS_PER_LINE * 3);
 
-      const depthFactor = 1 - (i / NUM_LINES) * 0.7; // Closer lines are brighter
+      const depthFactor = 1 - (i / NUM_LINES) * 0.7;
 
       for (let j = 0; j < POINTS_PER_LINE; j++) {
         const x = (j / (POINTS_PER_LINE - 1) - 0.5) * LINE_WIDTH;
@@ -97,14 +97,12 @@ export default function MusicWaves() {
         positions[j * 3 + 1] = 0;
         positions[j * 3 + 2] = z;
 
-        const distFromCenter = Math.abs(j / (POINTS_PER_LINE - 1) - 0.5) * 2; // 0 (center) to 1 (edges)
+        const distFromCenter = Math.abs(j / (POINTS_PER_LINE - 1) - 0.5) * 2;
 
         let pointColor = new THREE.Color();
         if (distFromCenter < 0.28) {
-          // Center crest: warm amber to crisp white
           pointColor.lerpColors(amberColor, whiteColor, (0.28 - distFromCenter) / 0.28);
         } else {
-          // Flanks: royal blue fading out
           pointColor.lerpColors(blueColor, whiteColor, 0.2);
         }
 
@@ -134,7 +132,6 @@ export default function MusicWaves() {
 
     linesRef.current = lineObjects;
 
-    // ResizeObserver ensures canvas always fills the container accurately
     const resizeObserver = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const { width: w, height: h } = entry.contentRect;
@@ -147,7 +144,6 @@ export default function MusicWaves() {
     });
     resizeObserver.observe(container);
 
-    // Mouse interaction listener
     const onPointerMove = (e) => {
       const rect = container.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
@@ -157,7 +153,6 @@ export default function MusicWaves() {
     };
     container.addEventListener('pointermove', onPointerMove);
 
-    // Animation Loop
     let clock = new THREE.Clock();
     let animId;
 
@@ -166,7 +161,6 @@ export default function MusicWaves() {
 
       const elapsedTime = clock.getElapsedTime();
 
-      // Smooth mouse camera interpolation
       mouseRef.current.x += (mouseRef.current.targetX - mouseRef.current.x) * 0.05;
       mouseRef.current.y += (mouseRef.current.targetY - mouseRef.current.y) * 0.05;
 
@@ -174,11 +168,9 @@ export default function MusicWaves() {
       camera.position.y = 48 + mouseRef.current.y;
       camera.lookAt(0, 0, -10);
 
-      // Get real audio frequency data
       studioAudio.getFrequencyData(freqDataRef.current);
       const isAudioActive = studioAudio.isPlaying;
 
-      // Update wave geometry vertices
       for (let i = 0; i < lineObjects.length; i++) {
         const { geometry, index } = lineObjects[i];
         const posAttr = geometry.attributes.position;
@@ -190,15 +182,13 @@ export default function MusicWaves() {
 
         for (let j = 0; j < POINTS_PER_LINE; j++) {
           const x = array[j * 3];
-          const normX = x / (LINE_WIDTH * 0.5); // -1 to 1
-          const bell = Math.exp(-normX * normX * 4.0); // Bell curve peaking at center
+          const normX = x / (LINE_WIDTH * 0.5);
+          const bell = Math.exp(-normX * normX * 4.0);
 
-          // Organic harmonic wave motion
           const idleWave =
             Math.sin(normX * 5.0 + elapsedTime * 1.4 + index * 0.35) * 6.5 +
             Math.cos(normX * 2.8 - elapsedTime * 0.9 + index * 0.2) * 4.0;
 
-          // Audio reactive jump
           const audioWave = audioAmp * bell * 34.0 * (1 + Math.sin(normX * 10 + elapsedTime * 5) * 0.3);
 
           array[j * 3 + 1] = (idleWave + audioWave) * bell;
@@ -228,78 +218,96 @@ export default function MusicWaves() {
   }, []);
 
   return (
-    <section id="waves" className="max-w-4xl mx-auto px-6 mb-16">
+    <section id="waves" className="max-w-6xl mx-auto px-4 sm:px-8 py-20">
       
-      {/* 3D Wave Canvas Card */}
-      <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-[#0B0D13] shadow-2xl">
+      {/* Precision Instrument Rack */}
+      <div className="border border-white/20 bg-[#08090D] shadow-2xl">
         
-        {/* Header Bar */}
-        <div className="px-5 py-3 border-b border-white/[0.07] bg-white/[0.02] flex items-center justify-between text-xs">
-          <div className="flex items-center gap-2">
-            <span className={`w-2 h-2 rounded-full transition-colors ${isPlaying ? 'bg-emerald-400' : 'bg-slate-600'}`} />
-            <span className="font-mono text-slate-300 font-medium">
-              {isPlaying ? 'Signal audio en cours · Fréquences actives' : 'Ondes musicales en veille'}
-            </span>
+        {/* Top Telemetry Header */}
+        <div className="px-5 py-4 border-b border-white/10 bg-[#0E1017] flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+          <div className="flex items-center gap-3">
+            <span className="text-amber-500 font-bold">// 02: SIGNAL MONITOR</span>
+            <span className="text-slate-700">|</span>
+            <div className="flex items-center gap-2">
+              <span className={`w-2 h-2 ${isPlaying ? 'bg-emerald-400' : 'bg-slate-600'}`} />
+              <span className="text-slate-300 font-medium">
+                {isPlaying ? 'BUFFER ACTIF · ANALYSE FFT EN COURS' : 'VEILLE HARMONIQUE'}
+              </span>
+            </div>
           </div>
-          <div className="text-slate-500 font-mono hidden sm:inline text-[11px]">
-            Three.js WebGL · Analyse harmonique 3D
+          <div className="text-slate-500 text-[11px] hidden sm:flex items-center gap-3">
+            <span>RÉPONSE : 20 HZ — 20 KHZ</span>
+            <span className="text-slate-700">·</span>
+            <span>THREE.JS WEBGL RENDERER</span>
           </div>
         </div>
 
         {/* 3D WebGL Canvas Viewport */}
         <div
           ref={mountRef}
-          className="w-full h-[320px] sm:h-[400px] cursor-grab active:cursor-grabbing relative"
+          className="w-full h-[380px] sm:h-[480px] cursor-grab active:cursor-grabbing relative bg-black"
         >
-          {/* Subtle Aspect Ratio Frame Overlay showing Video Convergence */}
+          {/* Razor-sharp Video Aspect Ratio Frame Overlay */}
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center p-6">
             <div
-              className={`border border-white/15 rounded-xl transition-all duration-300 relative ${
+              className={`border border-white/25 transition-all duration-300 relative ${
                 format === '16:9'
-                  ? 'w-[85%] aspect-video max-h-[75%]'
+                  ? 'w-[85%] aspect-video max-h-[82%]'
                   : format === '9:16'
                   ? 'h-[85%] aspect-[9/16]'
-                  : 'h-[75%] aspect-square'
+                  : 'h-[80%] aspect-square'
               }`}
             >
-              {/* Corner brackets */}
-              <div className="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-amber-500" />
-              <div className="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-amber-500" />
-              <div className="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-blue-500" />
-              <div className="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-blue-500" />
+              {/* Sharp 90-degree corner crosshairs */}
+              <div className="absolute -top-1.5 -left-1.5 w-3.5 h-3.5 border-t-2 border-l-2 border-amber-500" />
+              <div className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 border-t-2 border-r-2 border-amber-500" />
+              <div className="absolute -bottom-1.5 -left-1.5 w-3.5 h-3.5 border-b-2 border-l-2 border-blue-500" />
+              <div className="absolute -bottom-1.5 -right-1.5 w-3.5 h-3.5 border-b-2 border-r-2 border-blue-500" />
               
-              <div className="absolute top-2 left-2.5 font-mono text-[10px] text-slate-400">
-                Cadre vidéo {format}
+              <div className="absolute top-2.5 left-3 font-mono text-[10px] uppercase tracking-wider text-slate-300 bg-black/90 px-2.5 py-1 border border-white/15">
+                CADRAGE VIDÉO {format}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Minimalist Controls Bar */}
-        <div className="p-4 sm:p-5 border-t border-white/[0.06] bg-[#10131A] flex flex-wrap items-center justify-between gap-4">
+        {/* Sharp Hardware Controls Bar */}
+        <div className="p-4 sm:p-5 border-t border-white/10 bg-[#0E1017] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
           
           {/* Play & Audio Presets */}
-          <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={togglePlayback}
-              className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs transition-colors flex items-center gap-2"
+              className={`px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-2 border ${
+                isPlaying 
+                  ? 'bg-amber-600 hover:bg-amber-500 text-white border-amber-400' 
+                  : 'bg-blue-600 hover:bg-blue-500 text-white border-blue-400'
+              }`}
             >
               {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-              <span>{isPlaying ? 'Pause' : 'Écouter'}</span>
+              <span>{isPlaying ? 'PAUSE' : 'ÉCOUTER'}</span>
             </button>
 
-            <div className="flex items-center gap-1 p-1 bg-white/[0.04] border border-white/[0.06] rounded-lg text-xs text-slate-400">
+            <div className="flex items-center gap-1.5">
               <button
                 onClick={() => handleTrackChange('lofi')}
-                className={`px-2.5 py-1 rounded transition-colors ${activeTrack === 'lofi' ? 'bg-white/10 text-slate-100 font-medium' : 'hover:text-slate-200'}`}
+                className={`px-3.5 py-2 uppercase tracking-wider transition-colors border ${
+                  activeTrack === 'lofi' 
+                    ? 'bg-white text-black font-bold border-white' 
+                    : 'border-white/15 text-slate-400 hover:text-white hover:border-white/30 bg-black/40'
+                }`}
               >
-                Lo-Fi
+                LO-FI
               </button>
               <button
                 onClick={() => handleTrackChange('synthwave')}
-                className={`px-2.5 py-1 rounded transition-colors ${activeTrack === 'synthwave' ? 'bg-white/10 text-slate-100 font-medium' : 'hover:text-slate-200'}`}
+                className={`px-3.5 py-2 uppercase tracking-wider transition-colors border ${
+                  activeTrack === 'synthwave' 
+                    ? 'bg-white text-black font-bold border-white' 
+                    : 'border-white/15 text-slate-400 hover:text-white hover:border-white/30 bg-black/40'
+                }`}
               >
-                Synthwave
+                SYNTHWAVE
               </button>
             </div>
 
@@ -312,28 +320,28 @@ export default function MusicWaves() {
             />
             <button
               onClick={() => fileInputRef.current?.click()}
-              className="px-3 py-1.5 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-slate-200 hover:bg-white/[0.04] transition-colors flex items-center gap-1.5"
+              className="px-3.5 py-2 border border-white/15 bg-white/[0.02] text-slate-400 hover:text-white hover:bg-white/[0.06] transition-colors flex items-center gap-2 uppercase tracking-wider"
             >
               <Upload className="w-3.5 h-3.5" />
-              <span className="truncate max-w-[120px]">
-                {customFile || 'Importer audio'}
+              <span className="truncate max-w-[140px]">
+                {customFile ? customFile.toUpperCase() : 'IMPORTER FICHIER'}
               </span>
             </button>
           </div>
 
           {/* Video Format Ratio Picker & Volume */}
-          <div className="flex items-center gap-4 text-xs">
+          <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-slate-400">Cadrage vidéo :</span>
-              <div className="flex items-center gap-1">
+              <span className="text-slate-500 text-[11px] uppercase tracking-wider">FORMAT :</span>
+              <div className="flex items-center gap-1.5">
                 {['16:9', '9:16', '1:1'].map((f) => (
                   <button
                     key={f}
                     onClick={() => setFormat(f)}
-                    className={`px-2.5 py-1 rounded transition-colors ${
+                    className={`px-3 py-1.5 uppercase font-mono text-xs tracking-wider transition-colors border ${
                       format === f
-                        ? 'bg-white/10 text-slate-100 font-semibold border border-white/20'
-                        : 'text-slate-400 hover:text-slate-200'
+                        ? 'bg-white text-black font-bold border-white'
+                        : 'border-white/15 text-slate-400 hover:text-white hover:border-white/30 bg-black/40'
                     }`}
                   >
                     {f}
@@ -342,7 +350,7 @@ export default function MusicWaves() {
               </div>
             </div>
 
-            <div className="hidden sm:flex items-center gap-2 text-slate-400 font-mono">
+            <div className="hidden sm:flex items-center gap-2 text-slate-400 border-l border-white/10 pl-4">
               <Volume2 className="w-3.5 h-3.5 text-slate-400" />
               <input
                 type="range"
@@ -353,6 +361,9 @@ export default function MusicWaves() {
                 onChange={handleVolume}
                 className="w-16 accent-blue-500 cursor-pointer"
               />
+              <span className="text-[10px] text-slate-500 w-8 text-right font-mono">
+                {Math.round(volume * 100)}%
+              </span>
             </div>
           </div>
 
