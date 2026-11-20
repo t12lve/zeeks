@@ -228,7 +228,7 @@ export default function MusicWaves() {
   }, []);
 
   return (
-    <section id="waves" className="max-w-4xl mx-auto px-6 my-10">
+    <section id="waves" className="max-w-4xl mx-auto px-6 mb-16">
       
       {/* 3D Wave Canvas Card */}
       <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-[#0B0D13] shadow-2xl">

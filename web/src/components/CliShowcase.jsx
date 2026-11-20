@@ -33,14 +33,14 @@ export default function CliShowcase() {
   };
 
   return (
-    <section id="cli" className="max-w-4xl mx-auto px-6 py-12">
+    <section id="cli" className="max-w-4xl mx-auto px-6 mb-20">
       
       <div className="mb-6 text-left">
         <h2 className="text-xl font-medium text-slate-100 tracking-tight mb-2">
           Automatisation et ligne de commande
         </h2>
         <p className="text-sm text-slate-400">
-          Intégrez ZEEKS dans vos scripts PowerShell ou CMD pour traiter des albums entiers.
+          Intégrez ZEEKS dans vos scripts PowerShell ou CMD pour traiter des dossiers entiers.
         </p>
       </div>
 
